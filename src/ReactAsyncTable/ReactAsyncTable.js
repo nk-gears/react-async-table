@@ -175,7 +175,7 @@ class ReactAsyncTable extends Component {
     const values = [];
 
     for (const [key, value] of Object.entries(selectedItems)) {
-      if (value) values.push(parseInt(key, 10));
+      if (value) values.push(key);
     }
 
     const goToPage = setCurrentPage(
